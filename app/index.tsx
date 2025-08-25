@@ -41,7 +41,7 @@ export default function App() {
         body: JSON.stringify({
           to: normalizedPhone,
           // You must use contentSid and contentVariables for sandbox testing
-          contentSid: 'AC2bebd399cc3004c282a942ee8483c7e9', // Replace with your template's content SID
+          contentSid: 'HX17a66e2febc95880b867b2ae6c8fb821', // Replace with your template's content SID
           contentVariables: JSON.stringify({ '1': templateVariable }), // The sandbox template expects a variable named '1'
         }),
       });

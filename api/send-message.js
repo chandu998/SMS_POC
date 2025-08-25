@@ -35,7 +35,7 @@ module.exports = async (req, res) => {
       from: 'whatsapp:+14155238886',
       to: `whatsapp:${to}`,
       contentSid,
-      // contentVariables: parsedContentVariables,
+      contentVariables: parsedContentVariables,
     });
 
     return res.status(200).json({ success: true, sid: message.sid });
