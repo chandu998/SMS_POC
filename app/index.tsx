@@ -33,7 +33,7 @@ export default function App() {
 
     setLoading(true);
     try {
-      const vercelApiUrl = 'https://your-vercel-project-url.vercel.app/api/send-message'; // TODO: Replace with your actual Vercel URL
+      const vercelApiUrl = 'https://sms-poc-inky.vercel.app/api/send-message'; // TODO: Replace with your actual Vercel URL
       
       const response = await fetch(vercelApiUrl, {
         method: 'POST',
@@ -41,7 +41,7 @@ export default function App() {
         body: JSON.stringify({
           to: normalizedPhone,
           // You must use contentSid and contentVariables for sandbox testing
-          contentSid: 'HXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', // Replace with your template's content SID
+          contentSid: 'AC2bebd399cc3004c282a942ee8483c7e9', // Replace with your template's content SID
           contentVariables: JSON.stringify({ '1': templateVariable }), // The sandbox template expects a variable named '1'
         }),
       });
